@@ -8,6 +8,10 @@
   --font-family: 'Manrope', san-serif;
 }
 
+h2 {
+  margin: 0;
+}
+
 * {
   transition: opacity 0.15s;
 }
@@ -59,7 +63,6 @@ button {
 }
 
 .title-card {
-  font-size: 22px;
   font-weight: 700;
   color: #374152;
 }
