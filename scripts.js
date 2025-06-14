@@ -65,6 +65,7 @@ function btnDismissFtn() {
             mobileDismiss = false;
           }
         }
+        successFormMobile.style.display = 'none'
         successFormDesktop.style.display = 'none';
         formContainer.style.display = 'flex';
         active = false;
