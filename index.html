@@ -16,11 +16,12 @@
 
 <body>
   <main>
-    <div class="form-container" id="form">
+    <div class="form-container" id="js-form">
       <!-- Hidden element for responsive design  -->
       <div class="hidden-state">
         <img class="img-analytics" src="assets/images/illustration-sign-up-mobile.svg" alt="Image analytics">
       </div>
+      <!-- ///////////// -->
       <div class="left-section">
         <div class="title">
           <h1>
@@ -56,12 +57,12 @@
           <p class="email-header">
             Email address
           </p>
-          <p class="error-validator">
+          <p class="error-validator" id="js-error-message">
             Valid email required
           </p>
         </div>
         <div class="input-container">
-          <input class="input-email" type="email" placeholder="email@company.com">
+          <input class="input-email" id="js-email-validator" type="email" placeholder="email@company.com">
         </div>
         <div class="btn-subscribe-container">
           <button class="btn-subscribe" id="js-btn-subscribe">Subscribe to monthly newsletter</button>
@@ -74,7 +75,7 @@
 
     <!-- Thank you message Desktop -->
     <section>
-      <div class="form-success" id="desktop-form-success">
+      <div class="form-success" id="js-desktop-form-success">
         <div class="icon-success">
           <img class="checkmark" src="assets/images/icon-success.svg" alt="Icon success check">
         </div>
@@ -85,7 +86,8 @@
         </div>
         <div class="success-description-container">
           <p class="success-description">
-            A confirmation email has been sent to <span class="email">jpbascon50@gmail.com</span>. Please open it
+            A confirmation email has been sent to <span class="email js-email"></span>. Please
+            open it
             and click the button inside to confirm your subscription.
           </p>
         </div>
@@ -99,7 +101,7 @@
 
     <!-- Thank you message Mobile -->
     <section>
-      <div class="form-success-mobile" id="mobile-form-success">
+      <div class="form-success-mobile" id="js-mobile-form-success">
         <div class="icon-success-mobile">
           <img class="checkmark-mobile" src="assets/images/icon-success.svg" alt="Icon success check">
         </div>
@@ -110,7 +112,7 @@
         </div>
         <div class="success-description-container-mobile">
           <p class="success-description-mobile">
-            A confirmation email has been sent to <span class="email">jpbascon50@gmail.com</span>. Please open it
+            A confirmation email has been sent to <span class="email js-email"></span>. Please open it
             and click the button inside to confirm your subscription.
           </p>
         </div>
@@ -125,10 +127,10 @@
 
 
 
-  <!-- <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="github.com/jpbascon">Your Name Here</a>.
-  </div> -->
+  <div class="attribution">
+    Challenge by&nbsp;<a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by&nbsp;<a href="https://www.github.com/jpbascon" target="_blank">jpbascon</a>.
+  </div>
 </body>
 
 </html>
